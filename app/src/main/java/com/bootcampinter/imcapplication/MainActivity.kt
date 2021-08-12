@@ -26,15 +26,21 @@ class MainActivity : AppCompatActivity() {
             binding.titleTV.text = text
         }
         binding.buttonCalc.setOnClickListener {
-            calcularIMC(binding.pesoEDT.text.toString(), binding.alturaEDT.text.toString())
+            if (binding.pesoEDT.text.toString().isEmpty() || binding.alturaEDT.text.toString().isEmpty()){
+                Toast.makeText(this,"Um de seus campos está vazio",Toast.LENGTH_LONG).show()
+            }else{
+                calcularIMC(binding.pesoEDT.text.toString(), binding.alturaEDT.text.toString())
+            }
         }
     }
     private fun calcularIMC(peso: String, altura: String){
+
         val peso = peso.toFloatOrNull()
         val altura = altura.toFloatOrNull()
             if (peso != null && altura != null){
                 val imc: Float = peso/(altura * altura)
                 binding.titleTV.text = "Seu IMC é %.2f".format(imc)
+                Toast.makeText(this, binding.titleTV.text.toString(), Toast.LENGTH_LONG).show()
             }
     }
 }

@@ -13,20 +13,21 @@
         android:id="@+id/pesoEDT"
         android:layout_width="315dp"
         android:layout_height="49dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="188dp"
         android:autofillHints=""
         android:ems="10"
         android:gravity="center"
         android:hint="@string/peso_hint"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/alturaEDT"
-        android:layout_width="287dp"
-        android:layout_height="43dp"
+        android:layout_width="311dp"
+        android:layout_height="39dp"
         android:layout_marginTop="36dp"
         android:autofillHints=""
         android:ems="10"
@@ -46,9 +47,9 @@
         android:text="@string/calcular_hint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alturaEDT"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -62,4 +63,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="310dp"
+        android:layout_height="243dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaEDT"
+        app:srcCompat="@drawable/imcimagem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
