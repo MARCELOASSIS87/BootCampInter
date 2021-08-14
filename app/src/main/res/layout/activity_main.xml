@@ -72,5 +72,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alturaEDT"
-        app:srcCompat="@drawable/imcimagem" />
+        app:srcCompat="@drawable/imcimagem"
+        android:contentDescription="@string/imc_homem_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>

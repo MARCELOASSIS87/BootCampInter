@@ -7,6 +7,7 @@
     <string name="altura_hint">altura(ex: 1.89)</string>
     <string name="calcular_hint">Calcular</string>
     <string name="imc_hint">IMC</string>
+    <string name="imc_homem_image">TODO</string>
 
 
 </resources>
